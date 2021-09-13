@@ -1,0 +1,26 @@
+:root {
+  --primary: 204 27 27;
+  --secondary: ;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  align-items: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+#login {
+  background-color: red;
+  box-shadow: none;
+
+  border-radius: 0.5rem;
+}
+#login > a {
+  color: white;
+}
