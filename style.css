@@ -63,6 +63,7 @@ a {
 
 #buttonmenu {
   align-self: flex-end;
+  margin-right: 1rem;
 }
 
 /* NAV BUTTONS */
@@ -106,7 +107,7 @@ a {
   border-color: var(--secondary);
   border-radius: 50px;
   border: solid var(--secondary);
-  border-width: 2px;
+  border-width: 1.5px;
   margin: auto;
   box-shadow: none;
 }
@@ -116,11 +117,11 @@ input {
   border: none;
   background-color: transparent;
 }
-form {
+#searchbar {
   background-color: var(--secondary);
   border-radius: 0.5rem;
   padding: 0.5rem;
-  padding-right: 200px;
+  padding-right: 100px;
   margin: auto;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
@@ -128,7 +129,7 @@ form {
 
 /* CENTER TITLE */
 .sitename {
-  align-self: center;
+  margin: auto;
 }
 
 /* CONTENT */
