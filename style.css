@@ -226,10 +226,36 @@ main {
 }
 #directions > svg {
   margin-right: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 #recipeactions {
 }
+
+/* RECIPE GRID */
+
+.recipegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+}
+
+.recipecard {
+  padding: 0.5rem;
+}
+.recipecard::after {
+  background-color: #252525;
+
+  position: absolute;
+  margin-top: -140px;
+  height: 20px;
+  content: "Beer can cabbage sandwiches";
+  height: 50px;
+  width: 200px;
+  color: white;
+}
+
+/* FOOTER */
 
 .footer {
   background-color: var(--secondary);
