@@ -1,26 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --primary: 204 27 27;
-  --secondary: ;
+  --primary: rgb(204, 27, 27);
+  --secondary: rgb(229, 229, 229);
+  --textcolor: #131313;
+  --subtextcolor: #353535;
+  --headings: Quasimoda;
+  --body: Poppins;
+}
+
+body {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: var(--headings);
+}
+h2 {
+  font-family: var(--headings);
+}
+h3 {
+  font-family: var(--body);
+}
+h4 {
+  font-family: var(--body);
+  color: var(--subtextcolor);
+}
+
+p {
+  font-family: var(--body);
+}
+/* NAVIGATION */
+
+header {
+  border-bottom: solid;
+  border-width: 1.5px;
+  border-color: var(--secondary);
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 li {
   list-style: none;
+  font-family: var(--body);
 }
 ul {
   display: flex;
-  align-items: space-between;
+  flex-direction: row;
+
+  gap: 0.5rem;
 }
 
 a {
   text-decoration: none;
 }
 
-#login {
-  background-color: red;
-  box-shadow: none;
+#buttonmenu {
+  align-self: flex-end;
+  margin-right: 1rem;
+}
 
-  border-radius: 0.5rem;
+/* NAV BUTTONS */
+#login {
+  background-color: var(--primary);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  border-radius: 30px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
 }
 #login > a {
   color: white;
+}
+
+#signup {
+  background-color: var(--secondary);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  border-radius: 30px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
+}
+
+#signup > a {
+  color: var(--textcolor);
+}
+
+#dropdown {
+  background-color: transparent;
+  border-color: var(--secondary);
+  border-radius: 50px;
+  border: solid var(--secondary);
+  border-width: 1.5px;
+  margin: auto;
+  box-shadow: none;
+}
+
+/* SEARCHBAR */
+input {
+  border: none;
+  background-color: transparent;
+}
+#searchbar {
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  padding-right: 100px;
+  margin: auto;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* CENTER TITLE */
+.sitename {
+  margin: auto;
+}
+
+/* CONTENT */
+
+main {
 }
