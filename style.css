@@ -6,7 +6,7 @@
   --primary: rgb(204, 27, 27);
   --secondary: rgb(229, 229, 229);
   --textcolor: #131313;
-  --subtextcolor: #353535;
+  --subtextcolor: #808080;
   --headings: Quasimoda;
   --body: Poppins;
 }
@@ -20,6 +20,7 @@ h1 {
 }
 h2 {
   font-family: var(--headings);
+  font-size: 3rem;
 }
 h3 {
   font-family: var(--body);
@@ -29,8 +30,27 @@ h4 {
   color: var(--subtextcolor);
 }
 
+h5 {
+  font-family: Poppins;
+  color: var(--subtextcolor);
+  font-size: 0.5rem;
+}
+
 p {
   font-family: var(--body);
+}
+img {
+  display: block;
+  max-width: 60%;
+
+  height: auto;
+}
+
+article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* NAVIGATION */
 
@@ -50,12 +70,6 @@ li {
   list-style: none;
   font-family: var(--body);
 }
-ul {
-  display: flex;
-  flex-direction: row;
-
-  gap: 0.5rem;
-}
 
 a {
   text-decoration: none;
@@ -64,6 +78,10 @@ a {
 #buttonmenu {
   align-self: flex-end;
   margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  gap: 0.5rem;
 }
 
 /* NAV BUTTONS */
@@ -134,5 +152,81 @@ input {
 
 /* CONTENT */
 
+#overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem;
+}
 main {
+  display: grid;
+}
+
+#recipe {
+  display: flex;
+}
+
+#ingredientslist {
+  margin-left: auto;
+  list-style: none;
+}
+
+#ingredientslist > li {
+  padding-bottom: 10px;
+}
+
+#ingredients {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: 1px;
+  border-color: var(--secondary);
+}
+
+#epicurious {
+  border-left: solid;
+  border-right: solid;
+  border-width: 1px;
+  border-color: var(--secondary);
+}
+
+#ratings,
+#epicurious,
+#ingredientcount {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* Ingredients buttons */
+#directions {
+  background-color: var(--secondary);
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 0.5rem;
+}
+
+#save {
+  background-color: var(--primary);
+  border-style: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#save > svg {
+  margin-right: 5px;
+}
+#directions > svg {
+  margin-right: 5px;
+}
+
+#recipeactions {
 }
